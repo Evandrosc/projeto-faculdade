@@ -18,10 +18,10 @@ header {
 .nav-bar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-right: 2rem;
+    
 }
 
 .nav-list {
@@ -72,8 +72,9 @@ gap: 2rem;
 @media screen and (max-width: 1027px) {
 
     .nav-bar {
+        justify-content: space-between;
         align-items: flex-start;
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
 
     .nav-list ul {
