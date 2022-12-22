@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Sans-serif;
+}
+
+/*Cabeçalho*/
+
+header {
+    background-color: #F5F7FA;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    padding-right: 1rem;
+}
+
+.nav-list ul {
+display: flex;
+gap: 2rem;
+margin-right: 2rem;
+}
+
+#burguer {
+    cursor: pointer;
+    color: #16509F;
+}
+
+#burguer:hover {
+    color: black;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list ul a {
+    text-decoration: none;
+    color: #16509F;
+    font-weight: bold;
+}
+
+.nav-list ul a:hover {
+    color: black;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1027px) {
+
+    .nav-bar {
+        align-items: flex-start;
+    }
+
+    .nav-list ul {
+        gap: 0.5rem;
+    }
+
+    .nav-item {
+        display: none;
+        padding-top: 1rem;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        padding-top: 1rem;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        
+    }
+
+    .open {
+        display: block;
+    }
+}
+
+/* Meio */
+
+.contenier-01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+    background-color: #16509F;
+    padding: 1em 0;
+}
+
+
+.div-01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+}
+
+.div-01 img {
+    filter: invert(100%);
+}
+
+.div-01 p {
+    color: white;
+}
+
+.div-01 p strong {
+    font-size: 1.1rem;
+}
+
+.main-h1 {
+    color: #0976b7;
+    font-size: max(20px, 2.5vw);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}                    
