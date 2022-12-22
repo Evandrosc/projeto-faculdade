@@ -124,6 +124,10 @@ margin-right: 2rem;
     filter: invert(100%);
 }
 
+.div-01 a {
+    text-decoration: none;
+}
+
 .div-01 p {
     color: white;
 }
