@@ -24,6 +24,11 @@ header {
     
 }
 
+.nav-bar img {
+    width: max(150px, 12vw);
+    padding-left: 1rem;
+}
+
 .nav-list {
     display: flex;
 }
