@@ -28,7 +28,7 @@ header {
     
 }
 
-.nav-bar img {
+.nav-bar a img {
     width: max(150px, 12vw);
     padding-left: 1rem;
 }
@@ -42,13 +42,15 @@ display: flex;
 gap: 2rem;
 }
 
-#burguer {
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
     cursor: pointer;
-    color: #16509F;
+    margin-right: 1rem;
 }
 
-#burguer:hover {
-    color: black;
+.icon {
+    filter: invert(100%);
 }
 
 .nav-list li {
@@ -69,10 +71,6 @@ gap: 2rem;
     display: none;
 }
 
-.mobile {
-    display: flex;
-}
-
 .mobile-menu {
     display: none;
     width: 146px;
@@ -83,7 +81,6 @@ gap: 2rem;
     .nav-bar {
         justify-content: space-between;
         align-items: flex-start;
-        margin-right: 1rem;
     }
 
     .nav-list ul {
@@ -118,7 +115,7 @@ gap: 2rem;
 
 /* Meio */
 
-.contenier-01 {
+.contanier-01 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -179,7 +176,7 @@ gap: 2rem;
     }
 }
 
-.main-contenier {
+.main-contanier {
     display: flex;
     justify-content: space-around;
 }
