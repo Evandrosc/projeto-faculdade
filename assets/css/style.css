@@ -332,5 +332,15 @@ footer {
     .direitos-autorais {
         display: block;
     }
+}
 
+.whats {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.whats img {
+    width: max(3rem, 5vw);
 }
