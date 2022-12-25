@@ -262,6 +262,10 @@ footer {
     margin-bottom: 40px;
 }
 
+.div-footer {
+    max-width: 372px;
+}
+
 .div-footer h2 {
     color: #0976b7;
     margin-bottom: 15px;
@@ -290,9 +294,12 @@ footer {
     width: 40px;
 }
 
+.section-direitos-autorais {
+    margin: auto;
+}
+
 .direitos-autorais {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 30px;
 }
@@ -300,7 +307,9 @@ footer {
 .direitos-autorais p {
     margin-bottom: 10px;
     margin-right: 17px;
+    font-size: max(0.8rem, 1.2vw); 
 }
+
 
 .direitos-autorais a {
     text-decoration: none;
@@ -319,4 +328,9 @@ footer {
         flex-direction: column;
         margin-bottom: 15px;
     }
+
+    .direitos-autorais {
+        display: block;
+    }
+
 }
