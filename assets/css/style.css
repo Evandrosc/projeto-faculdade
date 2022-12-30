@@ -7,10 +7,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", Sans-serif;
-}
-
-body {
-    min-width: 350px;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 /*Cabeçalho*/
@@ -53,30 +51,29 @@ gap: 2rem;
     filter: invert(100%);
 }
 
-.nav-list li {
-    list-style: none;
-}
-
-.nav-list:hover li {
-    list-style: none;
-}
-
 .nav-list ul a {
-    text-decoration: none;
-    padding: 1rem;
+    padding: .9rem;
     color: #16509F;
     font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
 }
 
 .nav-list ul a:hover {
     color: white;
     background-color: #16509F;
-    border-radius: 10px 10px 0 0;
+    transition-duration: .3s;
 }
 
 .nav-list ul li ul {
+    background-color: #16509F;
     display: none;
-    margin-top: 15px;
+    border-radius: 0 10px 10px 0;
+}
+
+.nav-list ul li:hover ul {
+    display: block;
+    position: absolute;
 }
 
 .nav-list ul li ul li {
@@ -85,14 +82,6 @@ gap: 2rem;
 
 .nav-list ul li ul li a {
     color: white;
-}
-
-.nav-list ul li:hover ul {
-    background-color: #16509F;
-    position: absolute;
-    display: block;
-    padding: 0;
-    border-radius: 0 10px 10px;
 }
 
 .mobile-menu-icon {
@@ -169,10 +158,6 @@ gap: 2rem;
 #edit-square {
     font-size: 60px;
     color: white;
-}
-
-.div-01 a {
-    text-decoration: none;
 }
 
 .div-01 p {
@@ -306,7 +291,6 @@ footer {
 .div-footer a {
     color: #0976b7;
     font-weight: bold;
-    text-decoration: none;
 }
 
 .div-footer a:hover {
@@ -340,7 +324,6 @@ footer {
 
 
 .direitos-autorais a {
-    text-decoration: none;
     color: black;
 }
 
