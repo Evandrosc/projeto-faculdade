@@ -101,7 +101,7 @@ header {
     color: white;
     font-weight: bold;
     border: none;
-    text-transform: capitalize;
+    text-transform: initial;
     border-radius: 0;
     padding: 0;
 }
