@@ -68,20 +68,24 @@ gap: 2rem;
 .nav-list ul li ul {
     background-color: #16509F;
     display: none;
-    border-radius: 0 10px 10px 0;
+    position: absolute;
 }
 
 .nav-list ul li:hover ul {
     display: block;
-    position: absolute;
-}
-
-.nav-list ul li ul li {
-    padding: 20px 0;
 }
 
 .nav-list ul li ul li a {
+    display: block;
     color: white;
+    background-color: #16509F;
+    border-radius: 0;
+    text-transform: capitalize;
+}
+
+.nav-list ul li ul li:hover a {
+    background-color: white;
+    color: #16509F;
 }
 
 .mobile-menu-icon {
