@@ -104,42 +104,48 @@ header {
     height: 100vh;
 }
 
-.mobile-menu ul {
-    display: block;
+.mobile-menu ul li {
+    width: 35vw;
+    margin-left: 30px;
+    padding: 10px 0;
 }
 
-.mobile-menu li ul {
-    display: none;
+.cursos {
+    padding: 0;
 }
 
-.mobile-menu li:hover ul {
-    display: block;
+.cursos a {
+    display: flex;
+    align-items: center;
 }
 
-.mobile-menu ul a{
-    font-size: max(.9rem, 1.8vw);
+.cursos ul li a {
+    display: inline-block;
+}
+
+.mobile-menu ul li a {
+    font-size: max(.9rem, 2.5vw);
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    margin: auto;
-    display: table;
 }
 
-.mobile-menu ul li {
-    background-color: #16509F;
-    display: table;
-    margin: auto;
-    padding: 1rem 0;
-    width: 41%;
+.mobile-menu ul li a:hover {
+    color: lightgrey;
 }
 
-#arrow_drop_down {
-    position: absolute;
-    top: 141px;
+/*submenu*/
+.mobile-menu ul li ul {
+    display: none;
 }
 
-.mobile-menu a:hover {
-    color: darkgrey;
+.mobile-menu ul li:hover ul {
+    display: inline-block;
+}
+
+.mobile-menu ul li ul li {
+    margin: 0;
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 900px) {
