@@ -17,6 +17,13 @@ header {
     background-color: #F5F7FA;
 }
 
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
 .nav-bar {
     display: flex;
     align-items: center;
@@ -26,19 +33,16 @@ header {
     
 }
 
-.nav-bar a img {
-    width: max(150px, 12vw);
+.navbar-menu a img {
+    width: max(150px, 14vw);
     padding-left: 1rem;
 }
 
 .nav-list {
     display: flex;
-}
-
-.nav-list-ul {
-    display: flex;
     gap: 2rem;
-    }
+    margin-right: 3rem;
+}
 
 .mobile-menu-icon button {
     background-color: transparent;
@@ -88,28 +92,49 @@ header {
     color: #16509F;
 }
 
+/*icone*/
 .mobile-menu-icon {
     display: none;
 }
 
+/*menu mobile*/
 .mobile-menu {
     display: none;
+    background-color: #16509F;
+    height: 100vh;
+}
+
+.mobile-menu ul {
+    display: block;
+}
+
+.mobile-menu li ul {
+    display: none;
+}
+
+.mobile-menu li:hover ul {
+    display: block;
 }
 
 .mobile-menu ul a{
     font-size: max(.9rem, 1.8vw);
     color: white;
     font-weight: bold;
-    border: none;
-    text-transform: initial;
-    border-radius: 0;
-    padding: 0;
+    text-transform: uppercase;
+    margin: auto;
+    display: table;
 }
 
 .mobile-menu ul li {
     background-color: #16509F;
-    padding: .7rem .3rem;
-    border: 1px solid white;
+    display: table;
+    margin: auto;
+    padding: 1rem 0;
+    width: 80%;
+}
+
+.mobile-menu a:hover {
+    color: darkgrey;
 }
 
 @media screen and (max-width: 1027px) {
@@ -119,7 +144,7 @@ header {
         align-items: flex-start;
     }
 
-    .nav-list-ul {
+    .nav-list {
         display: none;
         gap: 0;
         border-radius: 10px;
@@ -127,14 +152,6 @@ header {
 
     .mobile-menu-icon {
         display: block;
-        padding-top: 1rem;
-    }
-
-    .mobile-menu ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        border-radius: 0;
     }
 
     .open {
