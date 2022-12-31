@@ -21,10 +21,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: .5rem 0;
 }
 
-.nav-bar {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -130,14 +130,25 @@ header {
     display: table;
     margin: auto;
     padding: 1rem 0;
-    width: 80%;
+    width: 41%;
+}
+
+#arrow_drop_down {
+    position: absolute;
+    top: 141px;
 }
 
 .mobile-menu a:hover {
     color: darkgrey;
 }
 
-@media screen and (max-width: 1027px) {
+@media screen and (max-width: 900px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
 
     .nav-bar {
         justify-content: space-between;
@@ -171,6 +182,11 @@ header {
     padding: 1em 0;
 }
 
+@media screen and (max-width: 900px) {
+    .contanier-01 {
+        padding-top: 100px;
+    }
+}
 
 .div-01 {
     display: flex;
@@ -209,8 +225,6 @@ header {
     .contanier-01 {
         flex-direction: column;
         align-items: center;
-        padding-top: 3px;
-        padding-bottom: 10px;
     }
 
     #link {
