@@ -57,20 +57,20 @@ header {
 
 .nav-item a {
     padding: .9rem;
-    color: var(--cor4);
+    color: #16509F;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 10px;
 }
 
 .nav-item a:hover {
-    color: var(--cor1)-cor1);
-    background-color: var(--cor4);
+    color: white;
+    background-color: #16509F;
     transition-duration: .3s;
 }
 
 .nav-item ul {
-    background-color: var(--cor4);
+    background-color: #16509F;
     display: none;
     position: absolute;
 }
@@ -81,15 +81,15 @@ header {
 
 .nav-item-sub a {
     display: block;
-    color: var(--cor1);
-    background-color: var(--cor4);
+    color: white;
+    background-color: #16509F;
     border-radius: 0;
     text-transform: capitalize;
 }
 
 .nav-item-sub:hover a {
-    background-color: var(--cor1);
-    color: var(--cor4);
+    background-color: white;
+    color: #16509F;
 }
 
 /*icone*/
@@ -100,7 +100,7 @@ header {
 /*menu mobile*/
 .mobile-menu {
     display: none;
-    background-color: var(--cor4);
+    background-color: #16509F;
     height: 100vh;
 }
 
@@ -125,7 +125,7 @@ header {
 
 .mobile-menu ul li a {
     font-size: max(.9rem, 2.5vw);
-    color: var(--cor1);
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -193,14 +193,14 @@ main section {
 main section article h1 {
     padding: 20px;
     font-size: max(2rem, 3vw);
-    color: var(--cor4);
+    color: #16509F;
 }
 
 main section article h2 {
     text-align: center;
     font-size: max(1.5rem, 2.5vw);
     margin: 10px 5px;
-    color: var(--cor4);
+    color: #0976b7;
 }
 
 main section p {
@@ -261,7 +261,7 @@ main section blockquote cite {
 }
 
 .main-rede-social div a {
-    color: var(--cor1);
+    color: white;
     font-weight: 600;
 }
 
@@ -305,7 +305,7 @@ footer {
 }
 
 .div-footer h2 {
-    color: var(--cor4);
+    color: #0976b7;
     margin-bottom: 15px;
 }
 
@@ -314,7 +314,7 @@ footer {
 }
 
 .div-footer a {
-    color: var(--cor4);
+    color: #0976b7;
     font-weight: bold;
 }
 
@@ -349,7 +349,7 @@ footer {
 
 
 .direitos-autorais a {
-    color: var(--cor2);
+    color: black;
 }
 
 @media screen and (max-width: 618px) {

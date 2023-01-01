@@ -2,15 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-:root {
-    --cor1: #ffffff;
-    --cor2: #000000;
-    --cor3: #F5F7FA;
-    --cor4: #16509F;
-    --cor5: #0976b7;
-    --cor7: #d3d3d3;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +14,7 @@
 /*Cabeçalho*/
 
 header {
-    background-color: var(--cor3);
+    background-color: #F5F7FA;
 }
 
 .navbar-menu {
@@ -66,20 +57,20 @@ header {
 
 .nav-item a {
     padding: .9rem;
-    color: var(--cor4);
+    color: #16509F;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 10px;
 }
 
 .nav-item a:hover {
-    color: var(--cor1);
-    background-color: var(--cor4);
+    color: white;
+    background-color: #16509F;
     transition-duration: .3s;
 }
 
 .nav-item ul {
-    background-color: var(--cor4);
+    background-color: #16509F;
     display: none;
     position: absolute;
 }
@@ -90,15 +81,15 @@ header {
 
 .nav-item-sub a {
     display: block;
-    color: var(--cor1);
-    background-color: var(--cor4);
+    color: white;
+    background-color: #16509F;
     border-radius: 0;
     text-transform: capitalize;
 }
 
 .nav-item-sub:hover a {
-    background-color: var(--cor1);
-    color: var(--cor4);
+    background-color: white;
+    color: #16509F;
 }
 
 /*icone*/
@@ -109,7 +100,7 @@ header {
 /*menu mobile*/
 .mobile-menu {
     display: none;
-    background-color: var(--cor4);
+    background-color: #16509F;
     height: 100vh;
 }
 
@@ -134,13 +125,13 @@ header {
 
 .mobile-menu ul li a {
     font-size: max(.9rem, 2.5vw);
-    color: var(--cor1);
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .mobile-menu ul li a:hover {
-    color: var(--cor7);
+    color: lightgrey;
 }
 
 /*submenu*/
@@ -202,7 +193,7 @@ footer {
 }
 
 .div-footer h2 {
-    color: var(--cor4);
+    color: #0976b7;
     margin-bottom: 15px;
 }
 
@@ -211,7 +202,7 @@ footer {
 }
 
 .div-footer a {
-    color: var(--cor4);
+    color: #0976b7;
     font-weight: bold;
 }
 
@@ -246,7 +237,7 @@ footer {
 
 
 .direitos-autorais a {
-    color: var(--cor2);
+    color: black;
 }
 
 @media screen and (max-width: 618px) {
