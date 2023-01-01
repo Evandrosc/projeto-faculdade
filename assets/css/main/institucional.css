@@ -1,3 +1,189 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor1: #ffffff;
+    --cor2: #000000;
+    --cor3: #F5F7FA;
+    --cor4: #16509F;
+    --cor5: #0976b7;
+    --cor7: #d3d3d3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*Cabeçalho*/
+
+header {
+    background-color: var(--cor3);
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.navbar-menu a img {
+    width: max(150px, 14vw);
+    padding-left: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    margin-right: 3rem;
+}
+
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.icon {
+    filter: invert(100%);
+}
+
+.nav-item a {
+    padding: .9rem;
+    color: var(--cor4);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.nav-item a:hover {
+    color: var(--cor1);
+    background-color: var(--cor4);
+    transition-duration: .3s;
+}
+
+.nav-item ul {
+    background-color: var(--cor4);
+    display: none;
+    position: absolute;
+}
+
+.nav-item:hover ul {
+    display: block;
+}
+
+.nav-item-sub a {
+    display: block;
+    color: var(--cor1);
+    background-color: var(--cor4);
+    border-radius: 0;
+    text-transform: capitalize;
+}
+
+.nav-item-sub:hover a {
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+/*icone*/
+.mobile-menu-icon {
+    display: none;
+}
+
+/*menu mobile*/
+.mobile-menu {
+    display: none;
+    background-color: var(--cor4);
+    height: 100vh;
+}
+
+.mobile-menu ul li {
+    width: 35vw;
+    margin-left: 30px;
+    padding: 10px 0;
+}
+
+.cursos {
+    padding: 0;
+}
+
+.cursos a {
+    display: flex;
+    align-items: center;
+}
+
+.cursos ul li a {
+    display: inline-block;
+}
+
+.mobile-menu ul li a {
+    font-size: max(.9rem, 2.5vw);
+    color: var(--cor1);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mobile-menu ul li a:hover {
+    color: var(--cor7);
+}
+
+/*submenu*/
+.mobile-menu ul li ul {
+    display: none;
+}
+
+.mobile-menu ul li:hover ul {
+    display: inline-block;
+}
+
+.mobile-menu ul li ul li {
+    margin: 0;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav-bar {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        display: none;
+        gap: 0;
+        border-radius: 10px;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .open {
+        display: block;
+    }
+}
 
 /*main*/
 
@@ -109,4 +295,98 @@ main section blockquote cite {
     main {
         padding-top: 100px;
     }
+}
+
+/*footer*/
+
+footer {
+    margin: 0 30px;
+}
+
+.section-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.div-footer {
+    max-width: 372px;
+}
+
+.div-footer h2 {
+    color: var(--cor5);
+    margin-bottom: 15px;
+}
+
+.div-footer2 {
+    margin-bottom: 10px;
+}
+
+.div-footer a {
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+.div-footer a:hover {
+    text-decoration: underline;
+}
+
+.rede-sociais {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rede-sociais img {
+    width: 40px;
+}
+
+.section-direitos-autorais {
+    margin: auto;
+}
+
+.direitos-autorais {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.direitos-autorais p {
+    margin-bottom: 10px;
+    margin-right: 17px;
+    font-size: max(0.8rem, 1.2vw); 
+}
+
+
+.direitos-autorais a {
+    color: var(--cor2);
+}
+
+@media screen and (max-width: 618px) {
+    .section-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .div-footer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .direitos-autorais {
+        display: block;
+    }
+}
+
+.whats {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.whats img {
+    width: max(3rem, 5vw);
 }
