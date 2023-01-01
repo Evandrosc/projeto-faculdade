@@ -252,11 +252,11 @@ main section blockquote cite {
 .main-redes-sociais a {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .main-redes-sociais img {
-    width: 30px;
+    width: max(20px, 1.8vw);
     filter: invert(100%);
 }
 
@@ -265,7 +265,21 @@ main section blockquote cite {
     font-weight: 600;
 }
 
+.main-rede-social-mobile {
+    display: none;
+    justify-content: space-around;
+}
+
 /*responsivo main*/
+@media screen and (max-width: 1200px) {
+    .main-rede-social {
+        display: none;
+    }
+
+    .main-rede-social-mobile {
+        display: flex;
+    }
+}
 
 @media screen and (max-width: 900px) {
     main {
