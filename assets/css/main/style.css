@@ -1,6 +1,14 @@
 
 /* Main */
 
+.main-section {
+    margin-bottom: 1px;
+}
+
+.main-section img {
+    width: 100%;
+}
+
 .contanier-01 {
     display: flex;
     flex-direction: row;
@@ -12,8 +20,8 @@
 }
 
 @media screen and (max-width: 900px) {
-    .contanier-01 {
-        padding-top: 100px;
+    .main-section {
+        padding-top: 79px;
     }
 }
 
