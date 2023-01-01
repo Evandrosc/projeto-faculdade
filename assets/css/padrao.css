@@ -179,36 +179,36 @@ header {
 /*main*/
 
 main {
-    padding-top: 1vw;
+    padding-top: 20px;
 }
 
 main section {
-    width: 75vw;
+    width: max(360px, 75%);
     margin: auto;
-    margin-top: 30px;
+    padding-bottom: 30px;
     border-radius: 10px;
     box-shadow: 1px 1px 15px #00000059;
 }
 
 main section article h1 {
     padding: 20px;
-    font-size: 2.2rem;
+    font-size: max(2rem, 3vw);
     color: #16509F;
 }
 
 main section article h2 {
     text-align: center;
-    font-size: 1.7rem;
-    margin: 10px 0;
+    font-size: max(1.5rem, 2.5vw);
+    margin: 10px 5px;
     color: #0976b7;
 }
 
 main section p {
     margin: 0 30px;
-    font-size: 1.1rem;
+    font-size: max(1rem, 1.6vw);
     text-align: justify;
     text-indent: 30px;
-    line-height: 2rem;
+    line-height: max(2rem, 3vw);
 }
 
 main section blockquote {
@@ -218,55 +218,59 @@ main section blockquote {
 main section blockquote p {
     margin: 0;
     padding-bottom: 5px;
-    line-height: 1.1rem;
+    font-size: max(1rem, 1.6vw);
+    line-height: 1.5rem;
     text-indent: 0;
     text-align: start;
 
 }
 
-.social h2 {
+main section blockquote cite {
+    font-size: max(.7rem, 1.1vw);
+    line-height: 1rem;
+}
+
+.main-social h2 {
+    font-size: max(1.4rem, 2.5vw);
     text-align: center;
     margin-bottom: 20px;
 }
 
-.social div {
+/*rede sociais*/
+
+.main-rede-social {
     display: flex;
     justify-content: space-around;
 }
 
-.social div div {
-    display: flex;
-    align-items: center;
-}
-
-.social div div a {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: white;
-    font-size: .9rem;
-    font-weight: bold;
-    padding: 10px 50px;
-}
-
-#facebook {
+.main-redes-sociais  {
+    padding: 10px 30px;
     background-color:  #3b5998;
+    border-radius: 10px;
 }
 
-#twitter {
-    background-color: #206f98;
+.main-redes-sociais a {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-#linkedin {
-    background-color: #103b53;
+.main-redes-sociais img {
+    width: 30px;
+    filter: invert(100%);
 }
 
-#whatsapp {
-    background-color: #002857;
+.main-rede-social div a {
+    color: white;
+    font-weight: 600;
 }
 
-.social div div a img {
-    width: 18px;
+/*responsivo main*/
+
+@media screen and (max-width: 900px) {
+    main {
+        padding-top: 100px;
+    }
 }
 
 /*radapé*/
