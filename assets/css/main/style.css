@@ -7,7 +7,7 @@
     justify-content: space-around;
     align-items: baseline;
     text-align: center;
-    background-color: #16509F;
+    background-color: var(--cor4);
     padding: 1em 0;
 }
 
@@ -26,16 +26,16 @@
 
 #graduation {
     font-size: 70px;
-    color: white;
+    color: var(--cor1);
 }
 
 #edit-square {
     font-size: 60px;
-    color: white;
+    color: var(--cor1);
 }
 
 .div-01 p {
-    color: white;
+    color: var(--cor1);
 }
 
 .div-01 p strong {
@@ -44,7 +44,7 @@
 }
 
 .main-h1 {
-    color: #0976b7;
+    color: var(--cor4);
     font-size: max(32px, 2.5vw);
     text-align: center;
     margin: 40px 7px;
@@ -83,23 +83,23 @@
 
 #location {
     font-size: 70px;
-    color: #0976b7;
+    color: var(--cor4);
 }
 
 #main-graduation {
     font-size: 70px;
-    color: #0976b7;
+    color: var(--cor4);
 }
 
 #groups {
     font-size: 70px;
-    color: #0976b7;
+    color: var(--cor4);
 }
 
 .main-escola p {
     font-weight: bold;
     font-size: max(18px, 1.5vw);
-    color: #0976b7;
+    color: var(--cor4);
     text-align: center;
     margin: 0 15px;
 }
@@ -126,7 +126,7 @@
     position: relative;
     width: 71vw;
     height: 40vh;
-    background-color: black;
+    background-color: var(--cor2);
 }
 
 .mapBox iframe {
