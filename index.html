@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script defer src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -40,20 +40,22 @@
         </div>
 
         <div class="mobile-menu">
-            <ul>
-                <li><a href="institucional.html">Institucional</a></li>
-                <li class="cursos"><a href="#">Cursos <span id="arrow_drop_down" class="material-symbols-outlined">
-                    arrow_drop_down
-                    </span></a>
-                    <ul>
-                        <li><a href="#">Graduação</a></li>
-                        <li ><a href="#">Especializações</a></li>
-                        <li ><a href="#">Cursos Livres</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Inscreva-se</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="institucional.html">Institucional</a></li>
+                    <li class="cursos"><a id="cursos-link" href="#">Cursos <span id="arrow_drop_down" class="material-symbols-outlined">
+                        arrow_drop_down
+                        </span></a>
+                        <ul class="sub-menu" id="sub-menu-cursos">
+                            <li><a href="#">Graduação</a></li>
+                            <li ><a href="#">Especializações</a></li>
+                            <li ><a href="#">Cursos Livres</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Inscreva-se</a></li>
+                </ul>
+            </nav>
         </div>
 
     </header>
@@ -162,5 +164,6 @@
     <div class="whats">
         <a target="_blank" rel="external" href="https://wa.me/5599000000000?text=Esse é um teste do projeto-faculdade"><img src="assets/img/whatsapp.svg" alt="whatsapp" title="Whatsapp"></a>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

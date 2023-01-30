@@ -144,15 +144,16 @@ header {
 }
 
 /*submenu*/
-.mobile-menu ul li ul {
+.sub-menu {
     display: none;
-}
+  }
+  
+  .sub-menu.active {
+    display: block;
+  }
+  
 
-.mobile-menu ul li:hover ul {
-    display: inline-block;
-}
-
-.mobile-menu ul li ul li {
+.sub-menu li {
     margin: 0;
     padding-top: 10px;
 }

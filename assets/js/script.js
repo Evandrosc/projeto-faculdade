@@ -1,3 +1,5 @@
+// menu mobile
+
 function menuShow() {
     let menuMobile = document.querySelector(".mobile-menu");
     if (menuMobile.classList.contains("open")) {
@@ -8,6 +10,16 @@ function menuShow() {
         document.querySelector(".icon").src = "assets/img/close_white_36dp.svg";
     }
 }
+
+// sub menu dropwn mobile
+
+$(document).ready(function(){
+  $("#cursos-link").click(function(){
+    $("#sub-menu-cursos").toggleClass("active");
+  });
+});
+
+// animação carrossel
 
 var slideIndex = 0;
 carousel();
