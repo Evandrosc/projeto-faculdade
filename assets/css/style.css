@@ -119,17 +119,13 @@ header {
     padding: 10px 0;
 }
 
-.cursos {
-    padding: 0;
-}
-
 .cursos a {
     display: flex;
     align-items: center;
 }
 
-.cursos ul li a {
-    display: inline-block;
+.cursos img {
+    filter: invert(100%)
 }
 
 .mobile-menu ul li a {
@@ -137,10 +133,6 @@ header {
     color: var(--cor1);
     font-weight: bold;
     text-transform: uppercase;
-}
-
-.mobile-menu ul li a:hover {
-    color: var(--cor7);
 }
 
 /*submenu*/
@@ -151,12 +143,6 @@ header {
   .sub-menu.active {
     display: block;
   }
-  
-
-.sub-menu li {
-    margin: 0;
-    padding-top: 10px;
-}
 
 @media screen and (max-width: 900px) {
 
