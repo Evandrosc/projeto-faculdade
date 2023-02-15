@@ -13,9 +13,11 @@ function menuShow() {
 
 // sub menu dropwn mobile
 
-$(document).ready(function(){
-  $("#cursos-link").click(function(){
-    $("#sub-menu-cursos").toggleClass("active");
+document.addEventListener("DOMContentLoaded", function() {
+  var cursosLink = document.getElementById("cursos-link");
+  cursosLink.addEventListener("click", function() {
+    var subMenuCursos = document.getElementById("sub-menu-cursos");
+    subMenuCursos.classList.toggle("active");
   });
 });
 
