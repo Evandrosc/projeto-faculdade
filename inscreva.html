@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instituto Gorete Rezende</title>
+    <title>Inscreva-se</title>
     <link rel="stylesheet" href="assets/css/header/header.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main/inscreva.css">
     <link rel="stylesheet" href="assets/css/footer/footer.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
     <header>
         <div class="navbar-menu">
@@ -21,7 +21,7 @@
                     <li class="nav-item"><a href="institucional.html" class="nav-link">Institucional</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Cursos</a>
                         <ul class="nav-list-sub">
-                            <li class="nav-item-sub" ><a href="graduacao.html">Graduação</a></li>
+                            <li class="nav-item-sub" ><a href="#">Graduação</a></li>
                             <li class="nav-item-sub"><a href="#">Especializações</a></li>
                             <li class="nav-item-sub"><a href="#">Cursos Livres</a></li>
                         </ul>
@@ -41,7 +41,7 @@
                     <li><a href="institucional.html">Institucional</a></li>
                     <li class="cursos"><a id="cursos-link" href="#">Cursos <img src="assets/img/espandir.svg" alt="espandir"></a>
                         <ul class="sub-menu" id="sub-menu-cursos">
-                            <li><a href="graduacao.html">Graduação</a></li>
+                            <li><a href="#">Graduação</a></li>
                             <li ><a href="#">Especializações</a></li>
                             <li ><a href="#">Cursos Livres</a></li>
                         </ul>
@@ -55,72 +55,16 @@
     </header>
 
     <main>
-        <section class="main-section">
-            <img class="mySlides" src="assets/img/escolha-sua-pos-graduacao-conosco1.jpg">
-            <img class="mySlides" src="assets/img/cursos-livre-banner2.jpg">
-        </section>
-
-        <section class="contanier-01">
-
-            <div class="div-01">
-                <a href="#" id="link">
-                    <span id="graduation" class="material-symbols-sharp">school</span>
-                    <p>Conheça Nossos Cursos de <br>
-                    <strong >Graduação</strong>
-                    </p>
-                </a>
-            </div>
-
-            <div class="div-01">
-                <a href="#">
-                    <span id="edit-square" class="material-symbols-sharp">edit_square</span>
-                    <p>Quer estudar aqui <br>
-                        <strong>Inscreva-se</strong></p>
-                </a>
-            </div>
-
-        </section>
-
-        <section>
-
-            <h1 class="main-h1">Somos o Instituto Gorete Rezende</h1>
-
-            <div class="main-contanier">
-
-                <div class="main-escola">
-                    <span id="location" class="material-symbols-sharp">location_on
-                    </span>
-                    <p>
-                        Reconhecido em Todo Território <span id="quebra-linha"><br></span> Nacional
-                    </p>
-                </div>
-
-                <div class="main-escola">
-                    <span id="main-graduation" class="material-symbols-sharp">school</span>
-                    <p>Estrutura de Qualidade
-                    </p>
-                </div>
-
-                <div class="main-escola">
-                    <span id="groups" class="material-symbols-sharp">groups</span>
-                    <p>Instrutores Qualificados</p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section>
-
-            <h1 class="main-h1">Localização</h1>
-
-            <div class="localizacao">
-                <div class="mapBox">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.380759839326!2d-41.72488719602107!3d-3.9416366626874884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7933ba78a5fcdeb%3A0xe797300643b1ef17!2sUnicesumar%20-%20Piracuruca!5e0!3m2!1spt-BR!2sbr!4v1671903414365!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-
-        </section>
+        <div class="contanier">
+            <form class="formulario" action="https://formsubmit.co/yago4885@uorak.com" method="POST">
+                <input type="text" name="nome" placeholder="Nome completo" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="cpf" placeholder="CPF" required>
+                <input type="date" name="data" placeholder="Data de Nascimento" required>
+                <input type="tel" name="celular" placeholder="Número celular" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
 
     <footer>
@@ -158,6 +102,7 @@
     <div class="whats">
         <a target="_blank" rel="external" href="https://wa.me/5599000000000?text=Esse é um teste do projeto-faculdade"><img src="assets/img/whatsapp.svg" alt="whatsapp" title="Whatsapp"></a>
     </div>
-    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/header.js"></script>
 </body>
 </html>
