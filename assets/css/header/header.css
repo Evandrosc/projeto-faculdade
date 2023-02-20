@@ -43,7 +43,6 @@ header {
 }
 
 .navbar-menu a img {
-    width: max(150px, 14vw);
     padding-left: 1rem;
 }
 
