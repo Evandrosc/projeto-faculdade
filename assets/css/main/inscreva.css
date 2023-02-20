@@ -24,7 +24,8 @@
 .contanier {
     margin: 0 auto;
     margin-top: 2rem;
-    width: 70%;
+    width: 90%;
+    max-width: 700px;
     padding: 2rem 1rem;
     border: 1px solid var(--cor4);
     border-radius: 10px;
@@ -38,7 +39,7 @@
 
 .formulario input {
     line-height: 2rem;
-    padding-left: 1rem;
+    padding-left: .2rem;
     width: 100%;
     border: 1px solid var(--cor4);
     border-radius: 5px;
