@@ -26,10 +26,6 @@
     margin-bottom: 1px;
 }
 
-.main-section img {
-    width: 100%;
-}
-
 .contanier-01 {
     display: flex;
     flex-direction: row;
