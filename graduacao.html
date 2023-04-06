@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graduação</title>
+    <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/header/header.css">
     <link rel="stylesheet" href="assets/css/main/graduacao.css">
     <link rel="stylesheet" href="assets/css/footer/footer.css">
@@ -20,7 +21,7 @@
                     <li class="nav-item"><a href="institucional.html" class="nav-link">Institucional</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Cursos</a>
                         <ul class="nav-list-sub">
-                            <li class="nav-item-sub" ><a href="graduacao.html">Graduação</a></li>
+                            <li class="nav-item-sub"><a href="graduacao.html">Graduação</a></li>
                             <li class="nav-item-sub"><a href="#">Especializações</a></li>
                             <li class="nav-item-sub"><a href="#">Cursos Livres</a></li>
                         </ul>
@@ -30,26 +31,30 @@
                 </ul>
             </nav>
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt="abrir menu"></button>
+                <button data-menu><img class="icon" src="assets/img/menu_white_36dp.svg" alt="abrir menu"></button>
             </div>
         </div>
 
-        <div class="mobile-menu">
-            <nav>
-                <ul>
-                    <li><a href="institucional.html">Institucional</a></li>
-                    <li class="cursos"><a id="cursos-link" href="#">Cursos <img src="assets/img/espandir.svg" alt="abrir menu cursos"></a>
-                        <ul class="sub-menu" id="sub-menu-cursos">
-                            <li><a href="graduacao.html">Graduação</a></li>
-                            <li ><a href="#">Especializações</a></li>
-                            <li ><a href="#">Cursos Livres</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="inscreva.html">Inscreva-se</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-lista">
+                <li>
+                    <a href="institucional.html" class="nav-sub-item">Institucional</a>
+                </li>
+                <li class="cursos" data-subMenu>
+                    <span>
+                        Cursos
+                        <img src="assets/img/espandir.svg" alt="abrir menu cursos">
+                    </span>
+                    <ul class="sub-menu">
+                        <li><a href="graduacao.html" class="nav-sub-item">Graduação</a></li>
+                        <li ><a href="#" class="nav-sub-item">Especializações</a></li>
+                        <li ><a href="#" class="nav-sub-item">Cursos Livres</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-sub-item">Blog</a></li>
+                <li><a href="inscreva.html" class="nav-sub-item">Inscreva-se</a></li>
+            </ul>
+        </nav>
 
     </header>
 

@@ -1,22 +1,27 @@
 // menu mobile
 
-function menuShow() {
-    let menuMobile = document.querySelector(".mobile-menu");
-    if (menuMobile.classList.contains("open")) {
-        menuMobile.classList.remove("open");
-        document.querySelector(".icon").src = "assets/img/menu_white_36dp.svg";
-    }else {
-        menuMobile.classList.add("open");
-        document.querySelector(".icon").src = "assets/img/close_white_36dp.svg";
-    }
+function mostraMenu() {
+  let menuMobile = document.querySelector(".mobile-nav");
+  if (menuMobile.classList.contains("open")) {
+      menuMobile.classList.remove("open");
+  } else {
+      menuMobile.classList.add("open");
+  }
 }
 
-// sub menu dropwn mobile
+const botaoMenu = document.querySelector('[data-menu]');
+botaoMenu.addEventListener('click', mostraMenu);
 
-document.addEventListener("DOMContentLoaded", function() {
-  var cursosLink = document.getElementById("cursos-link");
-  cursosLink.addEventListener("click", function() {
-    var subMenuCursos = document.getElementById("sub-menu-cursos");
-    subMenuCursos.classList.toggle("active");
-  });
-});
+// sub menu mobile
+
+function mostraSubMenu() {
+  const nav = document.querySelector('.sub-menu');
+  if (nav.classList.contains("open")) {
+      nav.classList.remove("open");
+  } else {
+      nav.classList.add("open");
+  }
+}
+
+const elemento = document.querySelector('[data-subMenu]');
+elemento.addEventListener('click', mostraSubMenu);

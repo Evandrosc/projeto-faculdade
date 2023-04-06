@@ -1,73 +1,77 @@
 // menu mobile
 
-function menuShow() {
-    let menuMobile = document.querySelector(".mobile-menu");
+function mostraMenu() {
+    let menuMobile = document.querySelector(".mobile-nav");
     if (menuMobile.classList.contains("open")) {
         menuMobile.classList.remove("open");
-        document.querySelector(".icon").src = "assets/img/menu_white_36dp.svg";
-    }else {
+    } else {
         menuMobile.classList.add("open");
-        document.querySelector(".icon").src = "assets/img/close_white_36dp.svg";
     }
 }
 
-// sub menu dropwn mobile
+const botaoMenu = document.querySelector('[data-menu]');
+botaoMenu.addEventListener('click', mostraMenu);
 
-document.addEventListener("DOMContentLoaded", function() {
-  var cursosLink = document.getElementById("cursos-link");
-  cursosLink.addEventListener("click", function() {
-    var subMenuCursos = document.getElementById("sub-menu-cursos");
-    subMenuCursos.classList.toggle("active");
-  });
-});
+// sub menu mobile
+
+function mostraSubMenu() {
+    const nav = document.querySelector('.sub-menu');
+    if (nav.classList.contains("open")) {
+        nav.classList.remove("open");
+    } else {
+        nav.classList.add("open");
+    }
+}
+
+const elemento = document.querySelector('[data-subMenu]');
+elemento.addEventListener('click', mostraSubMenu);
 
 // animação carrossel
 
-var slideIndex = 0;
-var timeoutId;
+let slideIndex = 0;
+let carouselTimeoutId;
 
 function carousel() {
-  console.log('carousel()');
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  timeoutId = setTimeout(carousel, 5000); // Alterar imagem a cada 5 segundos
+    console.log('carousel()');
+    const slides = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    carouselTimeoutId = setTimeout(carousel, 5000); // Alterar imagem a cada 5 segundos
 }
 
 function plusSlides(n) {
-  console.log('plusSlides(' + n + ')');
-  clearTimeout(timeoutId);
-  var x = document.getElementsByClassName("mySlides");
-  slideIndex += n;
-  if (slideIndex > x.length) {slideIndex = 1}
-  if (slideIndex < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-  timeoutId = setTimeout(carousel, 5000); // Alterar imagem a cada 5 segundos
+    console.log('plusSlides(' + n + ')');
+    clearTimeout(carouselTimeoutId);
+    const slides = document.getElementsByClassName("mySlides");
+    slideIndex += n;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    if (slideIndex < 1) { slideIndex = slides.length }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+    carouselTimeoutId = setTimeout(carousel, 5000); // Alterar imagem a cada 5 segundos
 }
 
 // Seleciona o elemento do carrossel
-var carouselElement = document.querySelector('.main-section');
+const carouselElement = document.querySelector('.main-section');
 
 // Cria uma nova instância do IntersectionObserver
-var observer = new IntersectionObserver(function(entries) {
-  console.log('observer callback');
-  // Verifica se o elemento do carrossel está visível na tela
-  if (entries[0].isIntersecting) {
-    // Se estiver visível, reinicia o carrossel
-    carousel();
-  } else {
-    // Caso contrário, pausa o carrossel
-    clearTimeout(timeoutId);
-  }
+const carouselObserver = new IntersectionObserver(function (entries) {
+    console.log('observer callback');
+    // Verifica se o elemento do carrossel está visível na tela
+    if (entries[0].isIntersecting) {
+        // Se estiver visível, reinicia o carrossel
+        carousel();
+    } else {
+        // Caso contrário, pausa o carrossel
+        clearTimeout(carouselTimeoutId);
+    }
 });
 
 // Observa o elemento do carrossel
-observer.observe(carouselElement);
+carouselObserver.observe(carouselElement);
