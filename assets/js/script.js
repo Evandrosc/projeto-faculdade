@@ -1,16 +1,28 @@
-// menu mobile
+// selecione o ícone do menu móvel
+const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
 
-function mostraMenu() {
-    let menuMobile = document.querySelector(".mobile-nav");
-    if (menuMobile.classList.contains("open")) {
-        menuMobile.classList.remove("open");
-    } else {
-        menuMobile.classList.add("open");
-    }
-}
+// adicione um ouvinte de eventos para o clique no ícone
+mobileMenuIcon.addEventListener('click', function() {
+  // selecione as linhas do ícone do menu móvel
+  const line1 = document.querySelector('.line1');
+  const line2 = document.querySelector('.line2');
+  const line3 = document.querySelector('.line3');
+  
+  // adicione ou remova a classe .active do ícone e das linhas
+  mobileMenuIcon.classList.toggle('active');
+  line1.classList.toggle('active');
+  line2.classList.toggle('active');
+  line3.classList.toggle('active');
+});
 
-const botaoMenu = document.querySelector('[data-menu]');
-botaoMenu.addEventListener('click', mostraMenu);
+// adicione o ouvinte de eventos diretamente no botão do menu móvel
+document.querySelector('[data-menu]').addEventListener('click', function() {
+  // selecione o elemento do menu móvel
+  const menuMobile = document.querySelector('.mobile-nav');
+  
+  // adicione ou remova a classe .open no menu móvel
+  menuMobile.classList.toggle('open');
+});
 
 // sub menu mobile
 
